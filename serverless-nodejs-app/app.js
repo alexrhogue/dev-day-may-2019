@@ -1,9 +1,10 @@
-const express = require('express')
-const sls = require('serverless-http')
-const app = express()
+import express from "express";
+import sls from "serverless-http";
 
-app.get('/', async (req, res, next) => {
-  res.status(200).send('Hello Jim!')
-})
+const app = express();
 
-module.exports.server = sls(app)
+app.get("/", async (req, res, next) => {
+  res.status(200).send("Hello Alex!");
+});
+
+export const server = sls(app);
