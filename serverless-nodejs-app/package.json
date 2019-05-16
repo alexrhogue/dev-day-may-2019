@@ -1,0 +1,14 @@
+{
+  "name": "serverless-nodejs-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "serverless-http": "^2.0.2"
+  }
+}
