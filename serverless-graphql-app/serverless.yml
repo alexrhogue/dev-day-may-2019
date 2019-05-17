@@ -1,4 +1,4 @@
-service: serverless-nodejs-app
+service: serverless-graphql-app
 
 plugins:
   - serverless-webpack
@@ -16,10 +16,10 @@ provider:
   region: us-west-2
 
 functions:
-  app:
-    handler: app.server # reference the file and exported method
-    events: # events trigger lambda functions
-      - http: # this is an API Gateway HTTP event trigger
-          path: /
+  graphql:
+    handler: graphql.graphql
+    events:
+      - http:
+          path: graphql
           method: ANY
           cors: true

@@ -4,7 +4,7 @@ import sls from "serverless-http";
 const app = express();
 
 app.get("/", async (req, res, next) => {
-  res.status(200).send("Hello Alex!");
+  res.status(200).send("Hello Serverless!");
 });
 
 export const server = sls(app);
