@@ -1,14 +1,16 @@
 {
-    "extends": "eslint-config-prettier",
+    "extends": ["eslint:recommended", "eslint-config-prettier"],
     "plugins": ["prettier"],
     "rules": {
-        "prettier/prettier": "error"
+        "prettier/prettier": "error",
+        "no-console": 0
     },
     "parserOptions": {
         "ecmaVersion": 2017,
         "sourceType": "module"
     },
     "env": {
-        "es6": true
+        "es6": true,
+        "node": true
     }
 }

@@ -4,9 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "npm run lint ; sls deploy",
     "deploy": "npm run lint ; sls deploy",
-    "graphql": "graphql .",
     "lint": "eslint ."
   },
   "keywords": [],

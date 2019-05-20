@@ -63,5 +63,8 @@ typings/
 # serverless
 .serverless
 
+# webpack
+.webpack
+
 # os
 .DS_Store
