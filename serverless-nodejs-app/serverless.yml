@@ -23,3 +23,7 @@ functions:
           path: /
           method: ANY
           cors: true
+      - http: # this is an API Gateway HTTP event trigger
+          path: update
+          method: post
+          cors: true
